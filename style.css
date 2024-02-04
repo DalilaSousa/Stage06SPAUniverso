@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --nav-bg-color: #121212;
+  --nav-text-color: white;
+  --button-bg-color: #0052CE;
+  --button-text-color: white;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+
+  color: var(--nav-text-color);
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(./assets/mountains-universe-1.png);  
+  background-size: cover;
+  background-position: center;
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(./assets/mountains-universe-1.png);  
+  background-size: cover;
+  background-position: center;
+}
+
+.main2{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(./assets/mountains-universe-2.png);  
+  background-size: cover;
+  background-position: center;
+}
+
+.main3{
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(./assets/mountains-universe-3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;  
+}
+
+.logo {
+  flex-shrink: 0; /* Evita que o logo participe da redução do contêiner */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex; /* Adicionado para exibir itens de menu horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+nav ul li {
+  margin-right: 20px; /* Espaçamento entre os itens da lista (opcional) */
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--nav-text-color);
+}
+
+nav ul li a:hover {
+  color: bisque;
+  transition: .3s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.content {
+  text-align: center;
+}
+
+.containerPage {
+  display: flex;
+  justify-content: flex-start; /* Alinhar conteúdo à esquerda */
+  align-items: flex-start; /* Alinhar conteúdo ao topo */
+  min-height: 100vh; /* Garante que o corpo da página tenha pelo menos a altura da tela */ 
+  min-width: 20vh;  
+}
+
+.contentPage{
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */  
+  margin-left: 20px; /* Espaçamento à esquerda para o contêiner */
+  align-items: flex-start; /* Alinhar os itens à esquerda dentro do contêiner */
+}
+
+.content h1{
+  margin: 10px 0;
+  font-size: 300%;
+}
+
+.contentPage h1{
+  padding-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 10px 0;
+  font-size: 300%;
+}
+
+p {
+  padding-top: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  
+  line-height: 1.5; /* Ajuste conforme necessário, 1.5 significa 1.5 vezes a altura da fonte */
+  margin-bottom: 10px; /* Espaçamento opcional na parte inferior de cada parágrafo */
+  width: 50%;
+}
+
+button {
+  margin: 10px 0;
+  border-color: white;
+  background-color: transparent;
+  padding: 1rem 1.6rem;  
+  border-radius: .5rem;
+  color: var(--button-text-color);
+}
